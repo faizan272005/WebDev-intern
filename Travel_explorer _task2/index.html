@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Travel Explorer</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <h2>Travel Explorer</h2>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#stats">Statistics</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-controls">
+            <button id="themeBtn">🌙</button>
+            <div class="hamburger" id="hamburger">☰</div>
+        </div>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1>Explore The World</h1>
+        <p>Discover amazing destinations and unforgettable journeys.</p>
+        <button id="openModal">Book Your Trip</button>
+    </div>
+</section>
+
+<section id="destinations" class="destinations">
+    <h2>Popular Destinations</h2>
+
+    <div class="slider-container">
+        <button id="prev">❮</button>
+
+        <img id="sliderImage"
+             src="https://picsum.photos/id/1015/1200/600"
+             alt="Travel">
+
+        <button id="next">❯</button>
+    </div>
+</section>
+
+<section id="stats" class="stats">
+    <div class="stat-box">
+        <h2 class="counter" data-target="5000">0</h2>
+        <p>Happy Travelers</p>
+    </div>
+
+    <div class="stat-box">
+        <h2 class="counter" data-target="120">0</h2>
+        <p>Destinations</p>
+    </div>
+
+    <div class="stat-box">
+        <h2 class="counter" data-target="350">0</h2>
+        <p>Tours Completed</p>
+    </div>
+</section>
+
+<section class="cards">
+    <div class="card">
+        <img src="https://picsum.photos/id/1018/400/250" alt="">
+        <h3>Maldives</h3>
+    </div>
+
+    <div class="card">
+        <img src="https://picsum.photos/id/1025/400/250" alt="">
+        <h3>Switzerland</h3>
+    </div>
+
+    <div class="card">
+        <img src="https://picsum.photos/id/1043/400/250" alt="">
+        <h3>Paris</h3>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+
+    <form>
+        <input type="text" id="name" placeholder="Name">
+        <small id="nameError"></small>
+
+        <input type="email" id="email" placeholder="Email">
+        <small id="emailError"></small>
+
+        <input type="text" id="phone" placeholder="Phone Number">
+        <small id="phoneError"></small>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<div class="modal" id="modal">
+    <div class="modal-content">
+        <span id="closeModal">&times;</span>
+        <h2>Travel Booking</h2>
+        <p>Book your dream destination today!</p>
+    </div>
+</div>
+
+<button id="topBtn">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
