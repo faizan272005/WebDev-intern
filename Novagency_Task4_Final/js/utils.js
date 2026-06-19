@@ -1,0 +1,1 @@
+/** Utility functions */ export const year=new Date().getFullYear();

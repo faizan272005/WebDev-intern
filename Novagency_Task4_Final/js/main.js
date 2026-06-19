@@ -1,0 +1,1 @@
+import {initProgress} from './ui.js';document.addEventListener('DOMContentLoaded',initProgress);
