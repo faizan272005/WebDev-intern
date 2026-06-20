@@ -1,0 +1,1 @@
+@media(max-width:768px){.hero{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.navbar{flex-direction:column;gap:10px}}
